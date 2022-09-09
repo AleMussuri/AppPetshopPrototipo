@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarConsultaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+
+            <TextView
+                android:id="@+id/codProd"
+                android:layout_width="299dp"
+                android:layout_height="34dp"
+                android:text="Cadastro de Consulta"
+                android:textSize="30sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/idpacientetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paciente" />
+
+            <EditText
+                android:id="@+id/txtanotacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite o CPF do cliente"
+                android:inputType="number"
+                android:maxLength="11" />
+
+            <TextView
+                android:id="@+id/agendamentotxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agendamento" />
+
+            <EditText
+                android:id="@+id/agendamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Utilize o formato dd/mm/yyyy"
+                android:inputType="date"
+                android:maxLength="20" />
+
+            <TextView
+                android:id="@+id/pagotxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pagamento" />
+
+            <EditText
+                android:id="@+id/pago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Descreva as informações do pagamento"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/cadastrarconsulta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Cadastrar"
+                android:text="Cadastrar Consulta"
+                tools:ignore="MissingConstraints" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

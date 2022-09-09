@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoConsultaActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/codProd"
+                android:layout_width="299dp"
+                android:layout_height="34dp"
+                android:text="Consulta"
+                android:textSize="30sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtpaciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paciente"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/nomepet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome do Pet" />
+
+            <TextView
+                android:id="@+id/txtnomepet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/racapet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="20"
+                android:text="Raça do Pet" />
+
+            <TextView
+                android:id="@+id/txtraca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/petidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Idade do Pet" />
+
+
+            <TextView
+                android:id="@+id/txtidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/dataconsulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data da Consulta" />
+
+            <TextView
+                android:id="@+id/txtdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="20" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="314dp"
+                            android:layout_height="46dp"
+                            android:text="Anotações"
+                            android:textSize="30sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="258dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="47dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
